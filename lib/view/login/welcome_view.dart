@@ -1,8 +1,8 @@
+import 'package:fitness/view/workout_tracker/workout_tracker_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
 import '../../common_widget/round_button.dart';
-import '../main_tab/main_tab_view.dart';
 
 class WelcomeView extends StatefulWidget {
   const WelcomeView({super.key});
@@ -38,7 +38,7 @@ SizedBox(
                 height: media.width * 0.1,
               ),
               Text(
-                "Welcome, Stefani",
+                "Welcome",
                 style: TextStyle(
                     color: TColor.black,
                     fontSize: 20,
@@ -52,13 +52,13 @@ SizedBox(
              const Spacer(),
 
                RoundButton(
-                  title: "Go To Home",
+                  title: "Go To List",
                   onPressed: () {
                     Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const MainTabView()));
-                  }),
+                         MaterialPageRoute(
+                             builder: (context) => ExerciseListScreen()));
+                   }),
                
             ],
           ),

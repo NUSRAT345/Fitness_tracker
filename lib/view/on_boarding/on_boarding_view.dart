@@ -1,5 +1,5 @@
 import 'package:fitness/common_widget/on_boarding_page.dart';
-import 'package:fitness/view/login/signup_view.dart';
+import 'package:fitness/view/login/welcome_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/colo_extension.dart';
@@ -17,7 +17,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     controller.addListener(() {
@@ -111,7 +110,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                       }else{
                         // Open Welcome Screen
                         print("Open Welcome Screen");
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUpView() ));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const WelcomeView() ));
                       }
                       
                   },),

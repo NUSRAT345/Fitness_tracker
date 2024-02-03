@@ -1,7 +1,5 @@
 
 import 'package:fitness/common_widget/on_boarding_page.dart';
-import 'package:fitness/view/login/login_view.dart';
-import 'package:fitness/view/main_tab/main_tab_view.dart';
 import 'package:fitness/view/on_boarding/started_view.dart';
 import 'package:flutter/material.dart';
 
