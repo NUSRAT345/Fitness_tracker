@@ -256,17 +256,10 @@ class _ExerciseDetailScreenState extends State<ExerciseDetailScreen> {
             isTimerTextShown: true,
             autoStart: false,
             onComplete: () {
-              // Timer completed callback
               setState(() {
                 _timerRunning = false;
               });
             },
-          ),
-          SizedBox(height: 20),
-          Text(
-            widget.exercise.description,
-            style: TextStyle(fontSize: 16),
-            textAlign: TextAlign.center,
           ),
           SizedBox(height: 20),
           Row(
