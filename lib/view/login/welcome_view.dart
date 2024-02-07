@@ -12,7 +12,6 @@ class WelcomeView extends StatefulWidget {
 }
 
 class _WelcomeViewState extends State<WelcomeView> {
-
   @override
   Widget build(BuildContext context) {
     var media = MediaQuery.of(context).size;
@@ -26,10 +25,10 @@ class _WelcomeViewState extends State<WelcomeView> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: [
-SizedBox(
+              SizedBox(
                 height: media.width * 0.1,
               ),
-               Image.asset(
+              Image.asset(
                 "assets/img/welcome.png",
                 width: media.width * 0.75,
                 fit: BoxFit.fitWidth,
@@ -49,21 +48,18 @@ SizedBox(
                 textAlign: TextAlign.center,
                 style: TextStyle(color: TColor.gray, fontSize: 12),
               ),
-             const Spacer(),
-
-               RoundButton(
+              const Spacer(),
+              RoundButton(
                   title: "Go To List",
                   onPressed: () {
                     Navigator.push(
                         context,
-                         MaterialPageRoute(
-                             builder: (context) => ExerciseListScreen()));
-                   }),
-               
+                        MaterialPageRoute(
+                            builder: (context) => ExerciseListScreen()));
+                  }),
             ],
           ),
         ),
-
       ),
     );
   }
